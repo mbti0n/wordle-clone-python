@@ -1,6 +1,9 @@
 # wordle-clone-python
 A basic Wordle clone, written in Python
 
+![wordleDemo-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3b45836d-92fb-44f1-865f-24dbc1eb9332)
+
+
 # Requirements
 python >= 3.9 (required by the `requests` library)
 
