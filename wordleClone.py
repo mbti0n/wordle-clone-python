@@ -1,15 +1,21 @@
-from colorama import Fore, Back, init
+from colorama import Fore, Back, init, Style
 from getWord import wordsDB, answerSource
-import os
+import os, subprocess
 init(autoreset=True)
 
 # Clear the screen when the program starts
 os.system('cls' if os.name == 'nt' else 'clear')
 
 # Print a blank board
-letterAns = [f"{Back.LIGHTBLACK_EX}               ", f"{Back.LIGHTBLACK_EX}               ", f"{Back.LIGHTBLACK_EX}               ", f"{Back.LIGHTBLACK_EX}               ", f"{Back.LIGHTBLACK_EX}               ", f"{Back.LIGHTBLACK_EX}               "]
+initLetter = ""
+
+for i in range (5):
+    initLetter += f"{Back.LIGHTBLACK_EX}   {Style.RESET_ALL} "
+    
+
+letterAns = [f"{initLetter}"] * 6
 for i in letterAns:
-    print(i)
+    print(f"{i}\n")
 
 # Wordle function    
 def wordle(word, answer, currIndex):
@@ -26,7 +32,7 @@ def wordle(word, answer, currIndex):
         os.system('cls' if os.name == 'nt' else 'clear')
         print("Word not found")
         for i in letterAns:
-            print(i)
+            print(f"{i}\n")
     else:
         # Add data of the answer word
         for idx, i in enumerate(stringExample):
@@ -53,14 +59,14 @@ def wordle(word, answer, currIndex):
         
         # Combine the answer string    
         for i in range(len(answerDict)):
-            answerString = answerString + f"{answerDict[i]['color']} {answerDict[i]['char']} "
+            answerString = answerString + f"{answerDict[i]['color']} {answerDict[i]['char']} {Style.RESET_ALL} "
     
         # Replace the current position of the board with the input word, then update it
         letterAns[currIndex] = answerString
         currIndex = currIndex + 1
         os.system('cls' if os.name == 'nt' else 'clear')
         for i in letterAns:
-            print(i)
+            print(f"{i}\n")
             
         # If the input word is correct, stop the function
         if typedWord.upper() == stringExample:
@@ -85,3 +91,7 @@ while count < 6:
         count = count + 1
     
 print(f"The word is {answerSource}")
+
+input("Press any key to continue...")
+
+subprocess.run(["python3", "main.py"])
