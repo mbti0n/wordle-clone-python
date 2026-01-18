@@ -5,8 +5,8 @@ A basic Wordle clone, written in Python
 
 ## Todo (?)
 - [x] Basic Wordle philosophy (having 6 tries, handling correct/incorrect/repeated letters, checking the existence of a word)
-- [ ] Customize board size
-- [ ] Customize board color
+- [x] Customized board size
+- [ ] Customized board color
 
 
 # Requirements
