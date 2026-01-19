@@ -1,7 +1,8 @@
 # wordle-clone-python
 A basic Wordle clone, written in Python
 
-![wordleDemo-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3b45836d-92fb-44f1-865f-24dbc1eb9332)
+![wordle2-ezgif com-video-to-gif-converter(1)](https://github.com/user-attachments/assets/a113c6d9-4218-4bab-a56e-ef1c41df6537)
+
 
 ## Todo (?)
 - [x] Basic Wordle philosophy (having 6 tries, handling correct/incorrect/repeated letters, checking the existence of a word)
