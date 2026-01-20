@@ -15,12 +15,12 @@ python >= 3.9 (required by the `requests` library)
 
 ## How to run
 ```bash
-python3 /path/to/wordleClone.py
+python3 /path/to/main.py
 ```
 or
 
 ```bash
-python /path/to/wordleClone.py
+python /path/to/main.py
 ```
 
 ## How to run
