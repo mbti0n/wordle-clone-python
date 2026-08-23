@@ -4,7 +4,7 @@ A basic Wordle clone, written in Python
 ![wordle2-ezgif com-video-to-gif-converter(1)](https://github.com/user-attachments/assets/a113c6d9-4218-4bab-a56e-ef1c41df6537)
 
 
-## Todo (?)
+## Roadmap
 - [x] Basic Wordle philosophy (having 6 tries, handling correct/incorrect/repeated letters, checking the existence of a word)
 - [x] Customized board size
 - [ ] Customized board color
